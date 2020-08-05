@@ -12,11 +12,11 @@ jobs:
     # the list of steps that the action will go through
     steps:
       - uses: actions/checkout@v1
-      - run: yarn
+      - run: npm
       - uses: chromaui/action@v1
         # options required to the GitHub chromatic action
         with:
           # our project token, to see how to obtain it
           # refer to https://www.learnstorybook.com/intro-to-storybook/react/en/deploy/
-          projectToken: project-token
+          projectToken: 4cao2nvk4jf
           token: ${{ secrets.GITHUB_TOKEN }}
