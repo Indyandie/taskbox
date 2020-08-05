@@ -20,7 +20,8 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
                     type="text" 
                     value={title} 
                     readOnly={true} 
-                    placeholder="Input title" />
+                    placeholder="Input title" 
+                    style={{ textOverflow: 'ellipsis', background: 'red' }}/>
             </div>
 
             <div 
